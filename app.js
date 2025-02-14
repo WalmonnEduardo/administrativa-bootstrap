@@ -18,3 +18,7 @@ function toggleMenu(element){
     // Alternar a visibilidade do menu em telas pequenas
     document.getElementById("sidebar").classList.toggle("show");
 }
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    window.location.href = "dashboard.html"; // Simula login
+});
